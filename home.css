@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navb {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: 140px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+.titicon {
+    display: flex;
+}
+
+.lefttop {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.navitems {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.iconimg {
+    height: 120px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.redirects {
+    margin: 26.5px;
+    color: white;
+}
+
+.line {
+
+    margin-top: 170px;
+    margin-bottom: 30px;
+    width: 10%;
+}
+
+p {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 3%;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+    .content {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .content {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+}
+.blog {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h3 {
+    color: white;
+}
+.date{
+    margin: 0;
+}
+.redirects:hover {
+    color: red;
+    transition: color .3s;
+}
+
+.post:hover {
+    background-color: rgb(255, 0, 0);
+        
+    transition: background-color 1s;
+}
+.myblog h2{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.fa-brands {
+    margin: 0px 10px;
+}
+
+.endtext {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands:hover {
+    color: red;
+    transition: color .3s;
+}
