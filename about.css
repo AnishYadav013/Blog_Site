@@ -6,33 +6,35 @@ body {
 .navb {
     background-color: rgb(0, 0, 0);
     display: flex;
-    height: 140px;
     width: 100%;
     margin: 0;
     position: fixed;
     top: 0;
     left: 0;
     justify-content: space-between;
-}
-
-.titicon {
-    display: flex;
+    align-items: center;
 }
 
 .lefttop {
     display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.lefttop h1 {
+    margin: 0;
+    margin-left: 3%;
 }
 
 .navitems {
-    margin-top: 30px;
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 .iconimg {
-    height: 120px;
+    height: 90px;
 }
 
 a {
@@ -54,7 +56,7 @@ h1 {
 
 .line {
 
-    margin-top: 170px;
+    margin-top: 150px;
     margin-bottom: 30px;
     width: 10%;
 }
@@ -65,16 +67,48 @@ p {
     margin: 3%;
 }
 
-.blog {
-    margin: 40px;
-    display: flex;
-    flex-direction: column;
+@media (max-width:700px) {
+    .navb {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-}
+    .logoname {
+        display: flex;
 
+    }
 
-h3 {
-    color: white;
+    .logoname h1 {
+        margin: 0;
+        margin-left: 3%;
+        font-size: 25px;
+    }
+
+    .iconimg {
+        height: 60px;
+    }
+
+    .navitems {
+        margin: 0;
+        margin-bottom: 2%;
+        height: 30px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .navitems h2 {
+        font-size: 20px;
+    }
+
+    .topline {
+        margin-top: 130px;
+    }
+
+    .redirects {
+        margin: 0;
+    }
 }
 
 .redirects:hover {
@@ -86,9 +120,9 @@ h3 {
     background-color: rgb(255, 0, 0);
 
     transition: background-color 1s;
-
 }
-.about h2{
+
+.about h2 {
     color: red;
 }
 
@@ -110,6 +144,9 @@ h3 {
 
 .desc {
     width: 40%;
+    color: white;
+    margin-left: 40px;
+    padding-top: 30px;
 }
 
 .myphoto {
@@ -117,23 +154,14 @@ h3 {
     width: 100%;
 }
 
-.desc {
-    color: white;
-    margin-left: 40px;
-    padding-top: 30px;
-}
-
 .contact {
-    display: flex; 
+    display: flex;
     width: 100%;
-    
-}
-
-.contact{
     justify-content: center;
     align-content: center;
     margin: 50px 0px;
 }
+
 .left {
     height: 600px;
     width: 25%;
@@ -145,7 +173,7 @@ h3 {
 
 .leftdesc {
     color: white;
-    
+
     width: 100%;
     text-align: center;
     font-size: 40px;
@@ -160,63 +188,77 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-@media (max-width:1000px){
-    .me{
+
+@media (max-width:1000px) {
+    .me {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .desc{
+
+    .desc {
         width: 70%;
     }
 }
+
 @media (max-width:810px) {
-    
-    .contact{
+
+    .contact {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .left{
+
+    .left {
         width: 80%;
     }
-    .leftdesc{
+
+    .leftdesc {
         width: 80%;
     }
-    .right{
+
+    .right {
         width: 80%;
         margin: 0;
-    }   
+    }
 }
+
 .contact-details {
     height: 80%;
     width: 80%;
     display: grid;
     grid: 30% 30% 40%/ 50% 50%;
-    grid-column-gap: 3%  
+    grid-column-gap: 3%
 }
-.three{
+
+.three {
     grid-column: 1/3;
-    
+
 }
-.four{
+
+.four {
     grid-column: 1/3;
 }
-.contact-details>div{
+
+.contact-details>div {
     width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
 }
-.contact-details input,textarea{
+
+.contact-details input,
+textarea {
     background-color: rgb(34, 32, 32);
     border: 0;
     border-bottom: 1px solid white;
     color: white;
 }
-.contact-details input,textarea:hover{
+
+.contact-details input,
+textarea:hover {
     color: red;
 }
 
