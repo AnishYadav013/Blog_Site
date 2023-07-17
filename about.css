@@ -200,7 +200,7 @@ p {
 
     .desc {
         width: 90%;
-        font-size:10px;
+        font-size: 10px;
     }
 }
 
@@ -223,6 +223,10 @@ p {
     .right {
         width: 80%;
         margin: 0;
+    }
+
+    .left {
+        height: 400px;
     }
 }
 
@@ -258,9 +262,9 @@ textarea {
     color: white;
 }
 
-.contact-details input,
+.contact-details input:hover,
 textarea:hover {
-    color: red;
+    border-color: red;
 }
 
 h3 {
