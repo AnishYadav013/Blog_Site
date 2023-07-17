@@ -118,7 +118,7 @@ p {
 
 .post:hover {
     background-color: rgb(255, 0, 0);
-    transition: background-color 1s;
+    transform: translateY(2%);
     transition: background-color 1s;
     border-radius: 5%;
 }
