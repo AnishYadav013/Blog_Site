@@ -17,7 +17,7 @@ const postsSchema = new mongoose.Schema({
   title: { type: String },
   content: { type: String },
 });
-mongoose.connect("mongodb+srv://anishyadav013:6wWfmBYMm94qr9A8@cluster0.pwcrxk3.mongodb.net/oneforall");
+mongoose.connect("type your mongoose server link");
 const users = mongoose.model("users", usersSchema);
 const posts = mongoose.model("posts", postsSchema);
 
