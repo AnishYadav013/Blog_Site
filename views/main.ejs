@@ -1,0 +1,24 @@
+<%- include ("partials/header"); -%>
+
+    <div class="subhead">
+        <p>LATEST</p>
+    </div>
+    <div class="content">
+        <% mainShow.forEach(function(element){ %>
+            <a href="/posts/<%=element.title%>" class="post">
+                <div class="blog">
+                    <img src="https://source.unsplash.com/900x900/?car" alt="" class="blogpic">
+                    <h3 class="date">Date</h3>
+                    <h3>
+                        <%=element.title%>
+                    </h3>
+                </div>
+            </a>
+
+            <%}) %>
+
+
+
+
+    </div>
+    <%- include ("partials/footer"); -%>

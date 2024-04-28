@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+    <% allposts.forEach(function(element){ %>
+        <div class="allposts">
+            <div class="packing">
+                <h3 class="date">Date</h3>
+                <img src="https://source.unsplash.com/600x600/?car" alt="" class="blogpic"
+                    style="display: block; margin:auto;">
+                <h1>
+                    <%=element.title%>
+                </h1>
+                <h3>
+                    <%=element.content%>
+                </h3>
+            </div>
+        </div>
+
+
+        <%}) %>
+            <%- include("partials/footer"); -%>
