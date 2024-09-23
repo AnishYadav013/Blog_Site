@@ -1,19 +1,22 @@
 <%- include("partials/header"); -%>
-    <% allposts.forEach(function(element){ %>
-        <div class="allposts">
-            <div class="packing">
-                <h3 class="date">Date</h3>
-                <img src="https://source.unsplash.com/600x600/?car" alt="" class="blogpic"
-                    style="display: block; margin:auto;">
-                <h1>
-                    <%=element.title%>
-                </h1>
-                <h3>
-                    <%=element.content%>
-                </h3>
-            </div>
-        </div>
 
+    <div class="page-content">
+        <% allposts.forEach(function(element){ %>
+            <a href="/posts/<%= encodeURIComponent(element.title) %>" class="posts">
+                <div class="blogs">
+                    <!-- Use the blogpic class to control image size -->
+                    <% if (element.titleImage) { %>
+                        <img src="<%= element.titleImage %>" alt="Blog Image" class="blogpic" />
+                        <% } %>
+                            <h3 class="date">
+                                <%= new Date(element.date).toLocaleDateString() %>
+                            </h3>
+                            <h3>
+                                <%= element.title %>
+                            </h3>
+                </div>
+            </a>
+            <% }) %>
+    </div>
 
-        <%}) %>
-            <%- include("partials/footer"); -%>
+    <%- include("partials/footer"); -%>
