@@ -17,7 +17,7 @@ app.use(session({
   secret: 'ANISH', // Replace with a real secret key
   resave: false,
   saveUninitialized: false,
-  store: MongoStore.create({ mongoUrl: 'mongodb+srv://anishyadav013:6wWfmBYMm94qr9A8@cluster0.pwcrxk3.mongodb.net/oneforall' }) // Replace with your MongoDB URL
+  store: MongoStore.create({ mongoUrl: 'mongodb+srv://username:password@cluster0.pwcrxk3.mongodb.net/oneforall' }) // Replace with your MongoDB URL
 }));
 
 // Define schemas and models
@@ -35,7 +35,7 @@ const postsSchema = new mongoose.Schema({
 
 
 
-mongoose.connect("mongodb+srv://anishyadav013:6wWfmBYMm94qr9A8@cluster0.pwcrxk3.mongodb.net/oneforall");
+mongoose.connect("mongodb+srv://username:password@cluster0.pwcrxk3.mongodb.net/oneforall");
 
 const users = mongoose.model("users", usersSchema);
 const posts = mongoose.model("posts", postsSchema);
